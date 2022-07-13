@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Usuario_admin</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="h1_paginas">Inicia sesi&oacute;n como administrador</h1>
+		</header>
+		<nav class="formul">
+			<form name="usuario_ini" method="get" action="http://localhost/login.php" autocomplete="off">    
+				<label for="usuario">Nombre de usuario:</label>
+				<input type="text" name="usuario" value="" size="20" id="usuario" maxlength="30" required="required"/> 
+				<br/>
+				<label for="clave" >Clave de acceso:</label>
+				<input type="password" name="clave" id="clave" size="25" maxlength="50" required="required"/> 
+				<br/>
+				<input type="submit" />
+			</form>	    
+			<a href="#" onclick="Cargar('html/Inicio.html','contenido')">
+				Volver a inicio
+			</a>
+		</nav>
+		<footer>
+			&copy; 2022 - &Aacute;ngel Dolz
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Carrito</title>
+        <script>
+            window.onload = pintaTabla();
+        </script>
+    </head>
+
+    <body>
+        <h1 class="h1_paginas">Carrito</h1>
+        <div>
+            <table class="carrito">
+                <thead>
+                    <tr>
+                        <td>Descripci&oacute;n</td><td>Precio</td><td>Cantidad</td><td></td><td></td>
+                    </tr>
+                </thead>
+                <tbody id="CuerpoTabla">
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Precio Total</td><td id="PrecioTotal"></td><td></td><td></td><td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <button class="btn btn-outline-light" onclick="EnviarCarrito('RecogerCarrito', 'contenido', JSON.parse(localStorage.getItem('pedido')))"> Tramitar pedido </button>
+        </div>
+    </body>
+</html>
